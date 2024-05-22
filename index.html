@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="pt-Br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="../reactapp/src/assets/patrick-perkins-ETRPjvb0KM0-unsplash.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="src/style/global.css">
+  <title>Lista de tarefas</title>
+
+</head>
+
+<body>
+
+
+  <div id="root"></div>
+
+  <div id="corpo">
+
+    <main>
+      <div class="conteudo-botao">
+        <ion-icon id="moon" name="moon-outline"></ion-icon>
+        <ion-icon id="sunny" name="sunny-outline"></ion-icon>
+        <input type="checkbox" class="checkbox" id="checked" />
+        <label class="label" for="checked">
+          <div class="ball"></div>
+        </label>
+      </div>
+
+      <div>
+        <nav class="tarefas">
+          <a href="src/pages/pages01/segunda.html" target="_blank">Segunda</a>
+          <a href="src/pages/pages01/terça.html" target="blank">Terça</a>
+          <a href="src/pages/pages01/guarta.html" target="blank">Guarta</a>
+          <a href="src/pages/pages01/quinta.html" target="blank">Quinta</a>
+          <a href="src/pages/pages01/sexta.html" target="blank">Sexta</a>
+          <a href="src/pages/pages01/sabado.html" target="blank">Sabado</a>
+          <a href="src/pages/pages01/domingo.html" target="blank">Domingo</a>
+        </nav>
+      </div>
+
+
+
+
+
+      <div class="imagem">
+        <img src="src/assets/patrick-perkins-ETRPjvb0KM0-unsplash.jpg" alt="">
+      </div>
+    </main>
+
+    <script type="module" src="src/main.jsx"></script>
+
+    <script>
+      // configuração do button
+      const chk = document.getElementById("checked");
+
+      chk.addEventListener("change", () => {
+        document.body.classList.toggle("dark");
+      });
+
+    </script>
+
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
