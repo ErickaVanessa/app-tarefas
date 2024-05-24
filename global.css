@@ -1,0 +1,76 @@
+body{
+  background-color:black;
+  color: palevioletred;
+  font-family: 'Courier New', Courier, monospace;
+  margin: auto;
+  text-align: center;
+}
+
+input{
+  
+  color: black;
+  font-size: 20px;
+  width: 50%;
+  height: 50px;
+  border-radius: 10px;
+  padding-left: 10px;
+}
+
+button{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+}
+
+ion-icon {
+  font-size: 23px;
+ 
+}
+
+#tarefas{
+  color:palevioletred;
+  font-size: 26px;
+  margin: auto;
+  align-items: center;
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+
+li{
+  box-shadow: 2px 2px 2px rgba(255, 255, 255, 0.312);
+  background-color: rgba(26, 24, 24, 0.219);
+  width: 50%;
+  height: 50px;
+  margin: auto;
+  border-bottom: 2px solid black;
+  margin-bottom: 20px;
+  padding: 5px;
+  border-radius:10px;
+  margin: auto;
+}
+
+li:hover{
+  background-color: rgba(84, 83, 83, 0.148);
+  transition: 0.3s;
+}
+
+ul{
+  list-style: none;
+  margin: auto;
+}
+
+
+.excluir{
+  background-color: green;
+  cursor: pointer;
+  margin-bottom: 10px;
+  margin-left: 20px;
+
+}
+
+.excluir:hover{
+  background-color: rgb(71, 180, 71);
+}

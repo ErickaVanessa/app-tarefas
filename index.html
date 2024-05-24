@@ -1,74 +1,30 @@
-<!doctype html>
-<html lang="pt-Br">
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="shortcut icon" href="../reactapp/src/assets/patrick-perkins-ETRPjvb0KM0-unsplash.jpg" type="image/x-icon">
-  <link rel="stylesheet" href="src/style/global.css">
-  <title>Lista de tarefas</title>
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="global.css">
+    <title>Lista de Tarefas</title>
 </head>
 
 <body>
-
-  <header>
-
-  <h1>Tarefas Semanas </h1>
-  <input type="text" name="" id="text" placeholder="digite seu nome..."></input>
-  </header>
-
-  <div id="root"></div>
-
-  <div id="corpo">
-
-    <main>
-      <div class="conteudo-botao">
-        <ion-icon id="moon" name="moon-outline"></ion-icon>
-        <ion-icon id="sunny" name="sunny-outline"></ion-icon>
-        <input type="checkbox" class="checkbox" id="checked" />
-        <label class="label" for="checked">
-          <div class="ball"></div>
-        </label>
-      </div>
-
-      <div>
-        <nav class="tarefas">
-          <a href="src/pages/pages01/segunda.html" target="_blank">Segunda</a>
-          <a href="src/pages/pages01/terça.html" target="blank">Terça</a>
-          <a href="src/pages/pages01/guarta.html" target="blank">Guarta</a>
-          <a href="src/pages/pages01/quinta.html" target="blank">Quinta</a>
-          <a href="src/pages/pages01/sexta.html" target="blank">Sexta</a>
-          <a href="src/pages/pages01/sabado.html" target="blank">Sabado</a>
-          <a href="src/pages/pages01/domingo.html" target="blank">Domingo</a>
-        </nav>
-      </div>
+    <div class="lista-tarefas">
+        <h1>Minha Lista de Tarefas</h1>
+        <input id="tarefa" type="text" placeholder="Adicione uma tarefa">
+        <button id="adicionar" onclick="envio()">
+            <ion-icon name="add-outline"></ion-icon>
+        </button>
+        <ul id="tarefas">
+            <!-- Tarefas serão adicionadas aqui -->
+            
+        </ul>
 
 
-
-
-
-      <div class="imagem">
-        <img src="src/assets/patrick-perkins-ETRPjvb0KM0-unsplash.jpg" alt="">
-      </div>
-    </main>
-
-    <script type="module" src="src/main.jsx"></script>
-
-    <script>
-      // configuração do button
-      const chk = document.getElementById("checked");
-
-      chk.addEventListener("change", () => {
-        document.body.classList.toggle("dark");
-      });
-
-    </script>
-
+    </div>
+    <script src="main.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>
